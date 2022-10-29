@@ -79,3 +79,10 @@ p {
 }
 
 /* Hero */
+
+.hero-banner {
+  background-image: url("../images/hero.jpg");
+  background-size: 100%;
+  background-position: center;
+  height: 400px;
+}
