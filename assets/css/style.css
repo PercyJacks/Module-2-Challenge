@@ -1,3 +1,4 @@
+/* CSS variables */
 :root {
   --highlight-colour: rgb(197, 241, 255);
   --secondary-colour: #00004b;
@@ -27,7 +28,8 @@ p {
   margin: 0;
 }
 
-/* tag for header */
+/* Header */
+
 #header {
   display: flex;
   flex-direction: row;
@@ -40,11 +42,13 @@ p {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  /* Make image circular */
   border-radius: 50%;
 }
 
 #navigation {
   display: flex;
+  /* Fill screen width */
   width: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -54,11 +58,16 @@ p {
   cursor: pointer;
   display: inline-block;
   text-decoration: underline;
+  /* Make text decoration slightly thicker */
   text-decoration-thickness: 3px;
   padding: 0px 10px;
   color: var(--highlight-colour);
 }
 
+/*
+  To add a bit of space to the right of the
+  last list item.
+*/
 #navigation ul li:last-child {
   margin-right: 20px;
 }
@@ -68,3 +77,5 @@ p {
   background-color: var(--highlight-colour);
   color: var(--secondary-colour);
 }
+
+/* Hero */
