@@ -26,5 +26,14 @@ p {
 #header {
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
+  margin: 0px;
+  padding: 5px;
+  background-color: teal;
+}
+
+#navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
 }
