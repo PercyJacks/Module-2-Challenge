@@ -82,7 +82,19 @@ p {
 
 .hero-banner {
   background-image: url("../images/hero.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   height: 400px;
+  /* To get the text to go to the bottom */
+  display: grid;
+  align-content: flex-end;
+}
+
+/* Put h2 text at right corner + Only highlight the h2 text */
+.hero-banner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 20px;
 }
