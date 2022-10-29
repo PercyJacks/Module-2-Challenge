@@ -21,3 +21,10 @@ h6 {
 p {
   margin: 0;
 }
+
+/* tag for header */
+#header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
