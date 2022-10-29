@@ -1,3 +1,8 @@
+:root {
+  --highlight-colour: rgb(197, 241, 255);
+  --secondary-colour: #00004b;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -28,7 +33,7 @@ p {
   flex-direction: row;
   margin: 0px;
   padding: 5px;
-  background-color: teal;
+  background-color: var(--secondary-colour);
 }
 
 #header img {
@@ -50,6 +55,7 @@ p {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   padding: 0px 10px;
+  color: var(--highlight-colour);
 }
 
 #navigation ul li:last-child {
