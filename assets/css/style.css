@@ -2,6 +2,7 @@
 :root {
   --highlight-colour: #c4ebfc;
   --secondary-colour: #00004b;
+  --border: 5px solid var(--highlight-colour);
 }
 
 * {
@@ -167,6 +168,7 @@ nav ul a {
 
 #portfolio-grid {
   /* margin: 0px 5%; */
+  margin-left: 20px;
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr;
@@ -178,22 +180,27 @@ nav ul a {
 
 #horiseon {
   grid-area: horiseon;
+  border: var(--border);
 }
 
 #rfid {
   grid-area: rfid;
+  border: var(--border);
 }
 
 #proximitydetector {
   grid-area: proximitydetector;
+  border: var(--border);
 }
 
 #avrdisplay {
   grid-area: avrdisplay;
+  border: var(--border);
 }
 
 #avrpong {
   grid-area: avrpong;
+  border: var(--border);
 }
 
 .portfolio-grid-area {
@@ -203,6 +210,11 @@ nav ul a {
   margin: 5px;
   cursor: pointer;
   align-content: end;
+}
+
+.heading {
+  background-color: var(--highlight-colour);
+  font-size: 22px;
 }
 
 /* Contact section */
