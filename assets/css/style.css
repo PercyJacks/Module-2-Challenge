@@ -163,6 +163,50 @@ nav ul a {
   padding-left: 20px;
 }
 
+/* Work section */
+
+#portfolio-grid {
+  /* margin: 0px 5%; */
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "horiseon horiseon"
+  "rfid proximitydetector"
+  "avrdisplay avrpong";
+}
+
+#horiseon {
+  grid-area: horiseon;
+}
+
+#rfid {
+  grid-area: rfid;
+}
+
+#proximitydetector {
+  grid-area: proximitydetector;
+}
+
+#avrdisplay {
+  grid-area: avrdisplay;
+}
+
+#avrpong {
+  grid-area: avrpong;
+}
+
+.portfolio-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  align-content: end;
+}
+
+/* Contact section */
+
 #contact nav {
   display: flex;
   width: 100%;
