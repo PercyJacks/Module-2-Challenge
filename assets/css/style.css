@@ -181,26 +181,31 @@ nav ul a {
 #horiseon {
   grid-area: horiseon;
   border: var(--border);
+  background-image: url("../images/horiseon_website.png");
 }
 
 #rfid {
   grid-area: rfid;
   border: var(--border);
+  background-image: url("../images/rfid_scanner.jpeg");
 }
 
 #proximitydetector {
   grid-area: proximitydetector;
   border: var(--border);
+  background-image: url("../images/proximity_detector.jpeg");
 }
 
 #avrdisplay {
   grid-area: avrdisplay;
   border: var(--border);
+  background-image: url("../images/avr_display.jpeg");
 }
 
 #avrpong {
   grid-area: avrpong;
   border: var(--border);
+  background-image: url("../images/avr_pong.jpg");
 }
 
 .portfolio-grid-area {
