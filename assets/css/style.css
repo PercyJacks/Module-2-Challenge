@@ -59,12 +59,20 @@ p {
   justify-content: flex-end;
 }
 
+/* Remove bullet point */
+nav ul {
+  list-style: none;
+}
+
+/* Make text decoration slightly thicker */
+nav ul a {
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
 #navigation ul li {
   cursor: pointer;
   display: inline-block;
-  text-decoration: underline;
-  /* Make text decoration slightly thicker */
-  text-decoration-thickness: 3px;
   padding: 0px 10px;
   color: var(--highlight-colour);
 }
@@ -153,4 +161,18 @@ p {
 
 .content {
   padding-left: 20px;
+}
+
+#contact nav {
+  display: flex;
+  width: 100%;
+}
+
+#contact ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#contact nav ul a {
+  color: var(--secondary-colour);
 }
