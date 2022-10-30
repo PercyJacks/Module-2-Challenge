@@ -103,3 +103,30 @@ p {
   padding: 20px;
   margin-right: 20px;
 }
+
+/* Main section */
+
+/* Use page-wrapper as grid container */
+.page-wrapper {
+  display: grid;
+  padding: 10px 80px;
+  grid-template-columns: 1fr 1fr;
+  /* height: auto; */
+  /* grid-template-rows: 300px 300px 300px; */
+  grid-template-areas:
+  "about about"
+  "work work"
+  "contact contact"
+}
+
+#about {
+  grid-area: about;
+ }
+
+ #work {
+   grid-area: work;
+ }
+
+ #contact {
+   grid-area: contact;
+ }
