@@ -77,6 +77,10 @@ p {
   margin-right: 20px;
 }
 
+#navigation a {
+  color: var(--highlight-colour);
+}
+
 .highlight {
   padding: 0px 10px;
   background-color: var(--highlight-colour);
@@ -111,8 +115,6 @@ p {
   display: grid;
   padding: 10px 80px;
   grid-template-columns: 1fr 1fr;
-  /* height: auto; */
-  /* grid-template-rows: 300px 300px 300px; */
   grid-template-areas:
   "about about"
   "work work"
@@ -121,12 +123,12 @@ p {
 
 #about {
   grid-area: about;
- }
+}
 
- #work {
-   grid-area: work;
- }
+#work {
+  grid-area: work;
+}
 
- #contact {
-   grid-area: contact;
- }
+#contact {
+  grid-area: contact;
+}
