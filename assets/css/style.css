@@ -132,3 +132,16 @@ p {
 #contact {
   grid-area: contact;
 }
+
+/* use page-section as grid area since they all have it as a class */
+.page-section {
+  padding-top: 20px;
+  display: flex;
+}
+
+.page-section h2 {
+  display: flex;
+  text-align: end;
+  width: 10%;
+  justify-content: flex-end;
+}
