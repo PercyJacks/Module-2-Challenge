@@ -1,6 +1,6 @@
 /* CSS variables */
 :root {
-  --highlight-colour: rgb(197, 241, 255);
+  --highlight-colour: #c4ebfc;
   --secondary-colour: #00004b;
 }
 
@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  color: var(--secondary-colour);
 }
 
 h1,
