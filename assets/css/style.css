@@ -89,6 +89,12 @@ ul a {
 
 #navigation a {
   color: var(--highlight-colour);
+  transition: 150ms ease-out;
+}
+
+#navigation a:hover {
+  background-color: var(--highlight-colour);
+  color: var(--secondary-colour);
 }
 
 .highlight {
