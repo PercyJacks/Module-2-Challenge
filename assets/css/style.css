@@ -157,7 +157,7 @@ ul a {
 
 #portfolio-grid {
   display: grid;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 500px 200px 200px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "horiseon horiseon"
@@ -168,46 +168,59 @@ ul a {
 #horiseon {
   grid-area: horiseon;
   border: var(--border);
-  background-image: url("../images/horiseon_website.png");
 }
 
 #rfid {
   grid-area: rfid;
   border: var(--border);
-  background-image: url("../images/rfid_scanner.jpeg");
 }
 
 #proximitydetector {
   grid-area: proximitydetector;
   border: var(--border);
-  background-image: url("../images/proximity_detector.jpeg");
 }
 
 #avrdisplay {
   grid-area: avrdisplay;
   border: var(--border);
-  background-image: url("../images/avr_display.jpeg");
 }
 
 #avrpong {
   grid-area: avrpong;
   border: var(--border);
-  background-image: url("../images/avr_pong.jpg");
 }
 
 .portfolio-grid-area {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* spacing between grid items */
   margin: 5px;
   cursor: pointer;
-  align-content: end;
+  /* needed to position the overlay */
+  position: relative;
 }
 
-.heading {
-  display: inline-block;
-  font-size: 22px;
+/* Add animation to grid */
+.portfolio-grid-area:hover {
+  transform: scale(1.025);
+}
+
+.portfolio-grid-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
   background-color: var(--highlight-colour);
+  font-size: 22px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 12px;
 }
 
 /* Contact section */
