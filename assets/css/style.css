@@ -2,7 +2,7 @@
 :root {
   --highlight-colour: #c4ebfc;
   --secondary-colour: #00004b;
-  --border: 5px solid var(--highlight-colour);
+  --border-highlight: 5px solid var(--highlight-colour);
   --border-section: 3px solid var(--secondary-colour);
 }
 
