@@ -3,7 +3,7 @@
   --highlight-colour: #c4ebfc;
   --secondary-colour: #00004b;
   --border: 5px solid var(--highlight-colour);
-  --border-right: 3px solid var(--secondary-colour);
+  --border-section: 3px solid var(--secondary-colour);
 }
 
 * {
@@ -129,7 +129,7 @@ ul a {
 }
 
 #about {
-  border-right: var(--border-right);
+  border-right: var(--border-section);
 }
 
 .content {
@@ -137,14 +137,13 @@ ul a {
 }
 
 #work {
-  border-right: var(--border-right);
+  border-right: var(--border-section);
 }
 
 #contact {
-  border-right: var(--border-right);
+  border-right: var(--border-section);
 }
 
-/* use page-section as grid area since they all have it as a class */
 .page-section, .content {
   padding: 0px 20px 20px 20px;
 }
@@ -167,27 +166,27 @@ ul a {
 
 #horiseon {
   grid-area: horiseon;
-  border: var(--border);
+  border: var(--border-highlight);
 }
 
 #rfid {
   grid-area: rfid;
-  border: var(--border);
+  border: var(--border-highlight);
 }
 
 #proximitydetector {
   grid-area: proximitydetector;
-  border: var(--border);
+  border: var(--border-highlight);
 }
 
 #avrdisplay {
   grid-area: avrdisplay;
-  border: var(--border);
+  border: var(--border-highlight);
 }
 
 #avrpong {
   grid-area: avrpong;
-  border: var(--border);
+  border: var(--border-highlight);
 }
 
 .portfolio-grid-area {
@@ -235,6 +234,7 @@ ul a {
   gap: 0px 30px;
   font-size: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #contact-content ul:first-child {
@@ -248,4 +248,75 @@ ul a {
 
 #contact-content ul li a {
   color: var(--secondary-colour);
+}
+
+/* Media Query - Responsiveness */
+
+@media only screen and (max-width: 1000px) {
+  /* Add space around list items so it's easier to click */
+  #contact-content ul li {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  /* Remove nav bar */
+  #navigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Restructure main section */
+  #about {
+    /* border-bottom: var(--border-section); */
+    border-right: none;
+    grid-column: 1 / -1;
+  }
+
+  .content {
+    grid-column: 1 / -1;
+  }
+
+  #work {
+    border-right: none;
+    grid-column: 1 / -1;
+  }
+
+  #contact {
+    border-right: none;
+    grid-column: 1 / -1;
+  }
+
+  .page-section, .content {
+    padding: 0px 0px 20px 20px;
+  }
+
+  .page-section h2 {
+    text-align: start;
+    border-bottom: var(--border-section);
+  }
+
+  /* Restructure project grid */
+  #portfolio-grid {
+    display: grid;
+    grid-template-rows: 300px repeat(4, 200px);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "horiseon"
+    "rfid"
+    "proximitydetector"
+    "avrdisplay"
+    "avrpong";
+  }
+
+  /* Restructure contact me */
+  #contact-content ul {
+    display: flex;
+    /* Fill screen width */
+    /* width: 100%; */
+    flex-direction: column;
+    gap: 10px 0px;
+    margin: 0;
+  }
 }
